@@ -7,7 +7,7 @@ A remote MCP server that gives Claude, ChatGPT, Claude Code, Codex and other ass
 - For assistants: https://sigmaclose.com/llms.txt
 - Guide: https://sigmaclose.com/guides/quickbooks-mcp-multiple-companies
 
-It never changes your books. Official reports: an assistant can hand over the same files the website makes, with get_report_file: profit and loss, balance sheet or cash flow as PDF, Excel or CSV, and the report pack as a PDF. It returns a download link that works for 10 minutes, for that one file, with no sign-in, so the person can click it in the chat.
+It never changes your books. Official reports: an agent can hand over the same files the website makes, with get_report_file: profit and loss, balance sheet or cash flow as PDF, Excel or CSV, and the report pack as a PDF. It returns a download link that works for 10 minutes, for that one file, with no sign-in, so the person can click it in the chat.
 
 This repository holds no code. The server is hosted at sigmaclose.com; this page is here so it can be found.
 
@@ -45,7 +45,7 @@ To try it without an account, use the public demo key. It reads made-up sample d
 curl -H "Authorization: Bearer sck_demo_northwind_sample_data_read_only" "https://sigmaclose.com/api/v1/get_overview"
 ```
 
-No key and no command line needed: every tool also answers from the sample data at a plain address, which an assistant that can only open web pages can read. For example https://sigmaclose.com/api/v1/demo/get_overview
+No key and no command line needed: every tool also answers from the sample data at a plain address, which an agent that can only open web pages can read. For example https://sigmaclose.com/api/v1/demo/get_overview
 
 There is also a read-only REST API: the same tools as GET requests, with a personal key. OpenAPI: https://sigmaclose.com/api/v1/openapi.json
 
